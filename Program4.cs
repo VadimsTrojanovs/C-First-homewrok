@@ -1,0 +1,12 @@
+int a;
+int b;
+int c;
+Console.WriteLine("Введите первое число");
+int.TryParse(Console.ReadLine(), out a);
+Console.WriteLine("Введите второе число");
+int.TryParse(Console.ReadLine(), out b);
+Console.WriteLine("Введите третье число");
+int.TryParse(Console.ReadLine(), out c);
+int try1 = Math.Max(a, b);
+int max = Math.Max(try1, c);
+Console.WriteLine(max + " - Наибольшее число");
